@@ -1,0 +1,18 @@
+== README
+
+This is a client for searching allabolag.se (Ruby 2.0.0p247)
+
+Before running a database (db_AllaBolag) in mysql has to be created by e.g.
+create database db_AllaBolag;
+user: user1 pw: <none>
+this can be changed in the database.yml file
+
+Then to set up the database type "rake db:migrate RAILS_ENV=development"
+This will create the necessary tables, dependencies etc.
+
+Run the project to start the server:
+rails server -b 0.0.0.0 -p 3000 -e development
+
+To search either run this file from the console by: "ruby client.rb companyname"
+or connect to "localhost:3000/companies" in browser
+

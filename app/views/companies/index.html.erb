@@ -1,0 +1,47 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="http://www.allabolag.se/css/ab001_v2.css" type="text/css" media="all" />
+
+<div class="clearUnderTopMenu">
+  <div class="searchForm" style="width:560px; height: 80px;">
+    <div class="searchFields">
+      <form id="search_form" name="search" method="get" action="companies">
+        <table width="1100" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td valign="top">
+              <table width="520" border="0" cellspacing="0" cellpadding="0">
+
+                <tr>
+                  <td class="sfWhatwhere">VAD SÖKER DU?</td>
+                  <td align="left">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><input type="text" name="query"  class="textFields" value="<%= params[:query] %>" maxlength="30" tabindex="2" /></td>
+                  <td rowspan="2" valign="top"><input type="image" src="http://www.allabolag.se/img/button_sok_56x25.png" id="search"/></td>
+                </tr>
+                <tr>
+                  <td class="text10grey6">ANGE BOLAG, PERSONNAMN, BRANSCH ELLER FRITT SÖKORD </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<table width="1100" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top">
+      <table width="520" border="0" cellspacing="0" cellpadding="0">
+        <br>
+        <div>
+          <%= render 'list', companies: @companies %>
+        </div>
+      </table>
+    </td>
+  </tr>
+</table>

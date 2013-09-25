@@ -1,0 +1,27 @@
+# mysql database
+development:
+  adapter: mysql
+  database: db_AllaBolag
+  pool: 5
+  timeout: 5000
+  encoding: utf8
+  username: user1
+  password:
+
+test:
+  adapter: mysql
+  database: test.db_AllaBolag
+  pool: 5
+  timeout: 5000
+  encoding: utf8
+  username: user1
+  password:
+
+production:
+  adapter: mysql
+  database: production.db_AllaBolag
+  pool: 5
+  timeout: 5000
+  encoding: utf8
+  username: user1
+  password:
