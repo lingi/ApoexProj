@@ -39,7 +39,11 @@
       <table width="520" border="0" cellspacing="0" cellpadding="0">
         <br>
         <div>
-          <%= render 'list', companies: @companies %>
+          <%if @companies.nil?%>
+              &nbsp;&nbsp; <%= @error %><br>
+          <%else%>
+             <%= render 'list', companies: @companies %>
+          <% end %>
         </div>
       </table>
     </td>

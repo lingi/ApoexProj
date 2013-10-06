@@ -10,7 +10,7 @@ development:
 
 test:
   adapter: mysql
-  database: test.db_AllaBolag
+  database: test_db_AllaBolag
   pool: 5
   timeout: 5000
   encoding: utf8
@@ -19,7 +19,7 @@ test:
 
 production:
   adapter: mysql
-  database: production.db_AllaBolag
+  database: production_db_AllaBolag
   pool: 5
   timeout: 5000
   encoding: utf8

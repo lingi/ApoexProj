@@ -1,12 +1,9 @@
 <p>
-<ul>
-  <%if companies.empty?%>
-      Inga resultat.<br>
-  <%end%>
-  <% companies.each do |c| %>
+  <ul>
+     <% companies.each do |c| %>
       <li><%= link_to "#{c.name.force_encoding('utf-8').encode}-#{c.identification_no}", c.get_url, :target => "_blank" %></li>
-  <% end %>
-</ul>
+     <% end %>
+  </ul>
 </p>
 <p>
   &nbsp;&nbsp;Resultat i:
